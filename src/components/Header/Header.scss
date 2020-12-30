@@ -1,0 +1,19 @@
+.Header {
+  background: var(--clr-shinning-blue);
+  &__container {
+    max-height: 6rem;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.7rem;
+  }
+}
+// Laptops and Desktop
+@media screen and (min-width: 991px) {
+  .Header {
+    &__container {
+      max-height: 9rem;
+    }
+  }
+}

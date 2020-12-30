@@ -1,11 +1,15 @@
-import './App.css';
+import Layout from './components/Layout'
+
+import './App.scss'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Layout>
+        <h1>Hello World!</h1>
+      </Layout>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

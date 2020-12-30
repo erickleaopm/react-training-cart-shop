@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-shinning-blue: #3498d8;
+  --clr-blue: #2980b9;
+  --clr-red: #e10303;
+  --clr-grayish-green: #80d2a3;
+  --clr-shinning-green: #11d000;
+  --clr-green: #2ecc71;
+  --clr-yellow: #e7ff53;
+  --maxWidth: 106.7rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+body {
+  margin: 0;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  font-family: 'Roboto', sans-serif, system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  @include font-size(3.6);
+}
+h2 {
+  @include font-size(2.4);
+}
+h3 {
+  @include font-size(2);
+}
+h4 {
+  @include font-size(1.8);
+}
+h5 {
+  @include font-size(1.6);
+}
+h6 {
+  @include font-size(1.4);
+}
+p {
+  @include font-size(1.6);
+}
